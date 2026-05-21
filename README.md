@@ -32,11 +32,13 @@ Open with Live Server
 
 ## Dosya Yapısı
 
+~~~text
 MertOS-Dashboard/
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
+~~~
 
 ## Notlar
 
