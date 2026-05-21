@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MertOS Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <span>MertOS v1.0</span>
+    <span>Local Mode</span>
+    <span>Focus Ready</span>
+  </div>
+
+  <main class="dashboard">
+    <section class="hero card">
+      <p class="eyebrow">MertOS Dashboard</p>
+      <h1>Hoş geldin, Mert Kaan.</h1>
+      <p class="subtitle">Bugün odaklan, üret ve sistemi kontrol altında tut.</p>
+
+      <div class="time-box">
+        <div id="clock">00:00</div>
+        <div id="date">Tarih yükleniyor...</div>
+      </div>
+    </section>
+
+    <section class="card focus-card">
+        <h2>Günün Odağı</h2>
+
+        <textarea
+            id="focusInput"
+            placeholder="Bugünkü ana hedefini yaz..."
+        ></textarea>
+
+        <button id="saveFocusBtn">Odağı Kaydet</button>
+    </section>
+
+    <section class="card shortcuts-card">
+      <h2>Hızlı Kısayollar</h2>
+
+      <div class="shortcuts">
+        <a href="https://github.com" target="_blank">
+            <strong>GitHub</strong>
+            <small>Kod depoları</small>
+        </a>
+
+        <a href="https://scoovi.app" target="_blank">
+            <strong>Scoovi</strong>
+            <small>Proje sitesi</small>
+        </a>
+
+        <a href="https://chatgpt.com" target="_blank">
+            <strong>ChatGPT</strong>
+            <small>Yapay zeka</small>
+        </a>
+
+        <a href="https://youtube.com" target="_blank">
+            <strong>YouTube</strong>
+            <small>Video / eğitim</small>
+        </a>
+
+        <a href="https://open.spotify.com" target="_blank">
+            <strong>Spotify</strong>
+            <small>Müzik modu</small>
+        </a>
+
+        <a href="https://mail.google.com" target="_blank">
+            <strong>Gmail</strong>
+            <small>E-postalar</small>
+        </a>
+
+        <button>
+            <strong>VS Code</strong>
+            <small>Lokal proje</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="card todo-card">
+      <h2>Mini Yapılacaklar</h2>
+
+      <div class="todo-input">
+        <input id="todoInput" type="text" placeholder="Yeni görev ekle..." />
+        <button id="addTodoBtn">Ekle</button>
+      </div>
+
+      <ul id="todoList"></ul>
+    </section>
+
+    <section class="card pomodoro-card">
+      <h2>Pomodoro</h2>
+
+      <div id="timer">25:00</div>
+
+      <div class="timer-buttons">
+        <button id="startBtn">Başlat</button>
+        <button id="resetBtn">Sıfırla</button>
+      </div>
+    </section>
+
+    <section class="card quote-card">
+      <h2>Bugünün Cümlesi</h2>
+      <p id="quoteText">Yükleniyor...</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
